@@ -25,6 +25,7 @@ export default function App() {
           placeholder="Whats your birthday?"
                     onChange={(event) => getInputs(event.target.value, event.target.name)}
           defaultValue="Hello"
+          id="1"
 
           />
           
