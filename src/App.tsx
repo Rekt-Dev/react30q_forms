@@ -2,7 +2,7 @@ import "./styles.css";
 import React from "react"
 export default function App() {
     
-    const getInputs=(value)=>{
+    const getInputs=(value:any)=>{
         console.log(value)
     }
   return (
@@ -14,13 +14,15 @@ export default function App() {
            type="text" 
           name="name"
           placeholder="Whats your name?"
-          onChange={(event) => getInputs(event.target.value)}
+          onChange={(event) => getInputs(event.target.value, event.target.name)}
           />
           
           <input
            type="date" 
           name="date of birth"
           placeholder="Whats your birthday?"
+                    onChange={(event) => getInputs(event.target.value, event.target.name)}
+
           />
           
           <input
@@ -28,12 +30,16 @@ export default function App() {
           name="fav number"
           placeholder="Whats your fav number?"
           defaultValue="Hello!"
+                    onChange={(event) => getInputs(event.target.value, event.target.name)}
+
           />
           
           <input
            type="text" 
           name="name"
           placeholder="Whats your pets name?"
+                    onChange={(event) => getInputs(event.target.value, event.target.name)}
+
           />
           
           <button  
