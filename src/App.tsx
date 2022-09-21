@@ -26,11 +26,11 @@ export default function App() {
           />
           
           <input
-           type="number" 
-          name="fav number"
-          placeholder="Whats your fav number?"
-          defaultValue="Hello!"
-                    onChange={(event) => getInputs(event.target.value, event.target.name)}
+           type="file" 
+          name="file"
+          placeholder="Upload your best nude?"
+          defaultValue="Hello"
+        onChange={(event) => getInputs(event.target.value, event.target.name)}
 
           />
           
