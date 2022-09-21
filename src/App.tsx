@@ -1,6 +1,10 @@
 import "./styles.css";
 import React from "react"
 export default function App() {
+    
+    const getInputs=(value)=>{
+        console.log(value)
+    }
   return (
     <div className="App">
       <h1>Learning React forms</h1>
@@ -10,6 +14,7 @@ export default function App() {
            type="text" 
           name="name"
           placeholder="Whats your name?"
+          onChange={(event) => getInputs(event.target.value)}
           />
           
           <input
@@ -22,6 +27,7 @@ export default function App() {
            type="number" 
           name="fav number"
           placeholder="Whats your fav number?"
+          defaultValue="Hello!"
           />
           
           <input
