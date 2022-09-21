@@ -25,14 +25,13 @@ export default function App() {
           placeholder="Whats your birthday?"
                     onChange={(event) => getInputs(event.target.value, event.target.name)}
           defaultValue="Hello"
-          id="1"
 
           />
           
           <input
            type="file" 
           name="file"
-          placeholder="Upload your best nude?"
+          placeholder="Upload your best nude"
           defaultValue="Hello"
         onChange={(event) => getInputs(event.target.value, event.target.name)}
 
