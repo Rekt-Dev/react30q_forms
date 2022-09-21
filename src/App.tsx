@@ -14,7 +14,7 @@ export default function App() {
            type="text" 
           name="name"
           placeholder="Whats your name?"
-          onChange={(event) => getInputs(event.target.value, event.target.name)}
+          onChange={(event) => getInputs(event.target.value)}
                     defaultValue="Hello"
 
           />
@@ -23,7 +23,7 @@ export default function App() {
            type="date" 
           name="date of birth"
           placeholder="Whats your birthday?"
-                    onChange={(event) => getInputs(event.target.value, event.target.name)}
+                    onChange={(event) => getInputs(event.target.value)}
           defaultValue="Hello"
 
           />
@@ -32,8 +32,7 @@ export default function App() {
            type="file" 
           name="file"
           placeholder="Upload your best nude"
-          defaultValue="Hello"
-        onChange={(event) => getInputs(event.target.value, event.target.name)}
+        onChange={(event) => getInputs(event.target.value)}
 
           />
           
@@ -41,7 +40,7 @@ export default function App() {
            type="text" 
           name="name"
           placeholder="Whats your pets name?"
-                    onChange={(event) => getInputs(event.target.value, event.target.name)}
+                    onChange={(event) => getInputs(event.target.value)}
           defaultValue="Hello"
 
           />
