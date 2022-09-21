@@ -15,6 +15,8 @@ export default function App() {
           name="name"
           placeholder="Whats your name?"
           onChange={(event) => getInputs(event.target.value, event.target.name)}
+                    defaultValue="Hello"
+
           />
           
           <input
@@ -22,6 +24,7 @@ export default function App() {
           name="date of birth"
           placeholder="Whats your birthday?"
                     onChange={(event) => getInputs(event.target.value, event.target.name)}
+          defaultValue="Hello"
 
           />
           
@@ -39,6 +42,7 @@ export default function App() {
           name="name"
           placeholder="Whats your pets name?"
                     onChange={(event) => getInputs(event.target.value, event.target.name)}
+          defaultValue="Hello"
 
           />
           
